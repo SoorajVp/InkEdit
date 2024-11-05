@@ -71,11 +71,13 @@ import { ExportPdf, ExportWord, ImportWord, MultiLevelList, Pagination } from 'c
 
 import 'ckeditor5/ckeditor5.css';
 import 'ckeditor5-premium-features/ckeditor5-premium-features.css';
+import './CKEditor.css'
+
 
 const LICENSE_KEY = import.meta.env.VITE_CKEDITOR_LICENSE_KEY;
 const CKBOX_TOKEN_URL = import.meta.env.VITE_CKBOX_TOKEN_URL;
 
-export default function DocEditor() {
+export default function DocEditor({data}) {
     const editorContainerRef = useRef(null);
     const editorMenuBarRef = useRef(null);
     const editorToolbarRef = useRef(null);
@@ -306,7 +308,51 @@ export default function DocEditor() {
             ]
         },
         initialData:
-            '<h2>Congratulations on setting up CKEditor 5! 🎉</h2>\n<p>\n    You\'ve successfully created a CKEditor 5 project. This powerful text editor will enhance your application, enabling rich text editing\n    capabilities that are customizable and easy to use.\n</p>\n<h3>What\'s next?</h3>\n<ol>\n    <li>\n        <strong>Integrate into your app</strong>: time to bring the editing into your application. Take the code you created and add to your\n        application.\n    </li>\n    <li>\n        <strong>Explore features:</strong> Experiment with different plugins and toolbar options to discover what works best for your needs.\n    </li>\n    <li>\n        <strong>Customize your editor:</strong> Tailor the editor\'s configuration to match your application\'s style and requirements. Or even\n        write your plugin!\n    </li>\n</ol>\n<p>\n    Keep experimenting, and don\'t hesitate to push the boundaries of what you can achieve with CKEditor 5. Your feedback is invaluable to us\n    as we strive to improve and evolve. Happy editing!\n</p>\n<h3>Helpful resources</h3>\n<ul>\n    <li>📝 <a href="https://orders.ckeditor.com/trial/premium-features">Trial sign up</a>,</li>\n    <li>📕 <a href="https://ckeditor.com/docs/ckeditor5/latest/installation/index.html">Documentation</a>,</li>\n    <li>⭐️ <a href="https://github.com/ckeditor/ckeditor5">GitHub</a> (star us if you can!),</li>\n    <li>🏠 <a href="https://ckeditor.com">CKEditor Homepage</a>,</li>\n    <li>🧑‍💻 <a href="https://ckeditor.com/ckeditor-5/demo/">CKEditor 5 Demos</a>,</li>\n</ul>\n<h3>Need help?</h3>\n<p>\n    See this text, but the editor is not starting up? Check the browser\'s console for clues and guidance. It may be related to an incorrect\n    license key if you use premium features or another feature-related requirement. If you cannot make it work, file a GitHub issue, and we\n    will help as soon as possible!\n</p>\n',
+            `<h1>Document Editor - INKEDIT</h1>
+
+                <p>
+                    INKEDIT is a powerful Document Editor built with <strong>React</strong> and <strong>Vite</strong>. 
+                    This editor provides a user-friendly layout and integrates <strong>CKEditor</strong> for enhanced rich text editing capabilities.
+                </p>
+
+                <h2>Key Features</h2>
+                <ul>
+                    <li><strong>Rich Text Editing:</strong> The CKEditor integration offers a customizable toolbar, enabling easy formatting, image insertion, and content management.</li>
+                    <li><strong>File Import/Export:</strong> Supports importing <code>.docx</code> documents and exporting work in Word or PDF formats for seamless compatibility.</li>
+                    <li><strong>Fast Development:</strong> Built with Vite, providing fast refresh for a more efficient development experience.</li>
+                </ul>
+
+                <h2>Getting Started</h2>
+
+                <h3>Prerequisites</h3>
+                <p>Make sure you have <strong>Node.js</strong> and <strong>npm</strong> installed on your machine.</p>
+
+                <h3>Installation</h3>
+                <ol>
+                    <li>Clone the repository:
+                        <pre><code>git clone https://github.com/SoorajVp/InkEdit.git</code></pre>
+                    </li>
+                    <li>Navigate to the project folder:
+                        <pre><code>cd InkEdit</code></pre>
+                    </li>
+                    <li>Install dependencies:
+                        <pre><code>npm install</code></pre>
+                    </li>
+                </ol>
+
+                <h2>Running the Project</h2>
+                <p>To start the development server with Vite's fast refresh, run:</p>
+                <pre><code>npm run dev</code></pre>
+
+                <h2>Build for Production</h2>
+                <p>To create an optimized production build, run:</p>
+                <pre><code>npm run build</code></pre>
+
+                <h2>Documentation and Resources</h2>
+                <ul>
+                    <li><a href="https://ckeditor.com/docs/ckeditor5/latest/index.html">CKEditor Documentation</a></li>
+                    <li><a href="https://vitejs.dev/guide/">Vite Documentation</a></li>
+                </ul>`,
         licenseKey: LICENSE_KEY,
         link: {
             addTargetToExternalLinks: true,

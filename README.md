@@ -58,7 +58,6 @@ Make sure you have **Node.js** and **npm** installed on your machine.
     ```bash
     npm run build
 
-
 ## Key Resources
 
 - [CKEditor Documentation](https://ckeditor.com/docs/ckeditor5/latest/index.html) - Official documentation for CKEditor.

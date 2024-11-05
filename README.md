@@ -28,14 +28,12 @@ Make sure you have **Node.js** and **npm** installed on your machine.
    ```bash
    npm install
 
-
 ## Running the Project
 
 - To start the development server with Vite's fast refresh, run:
 
     ```bash
     npm run dev
-
 
 ## Running the Project
 

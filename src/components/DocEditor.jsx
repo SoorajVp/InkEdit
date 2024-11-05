@@ -72,9 +72,8 @@ import { ExportPdf, ExportWord, ImportWord, MultiLevelList, Pagination } from 'c
 import 'ckeditor5/ckeditor5.css';
 import 'ckeditor5-premium-features/ckeditor5-premium-features.css';
 
-
-const LICENSE_KEY = '<YOUR_LICENSE_KEY>';
-const CKBOX_TOKEN_URL = '<YOUR_CKBOX_TOKEN_URL>';
+const LICENSE_KEY = import.meta.env.VITE_CKEDITOR_LICENSE_KEY;
+const CKBOX_TOKEN_URL = import.meta.env.VITE_CKBOX_TOKEN_URL;
 
 export default function DocEditor() {
     const editorContainerRef = useRef(null);

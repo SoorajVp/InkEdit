@@ -24,7 +24,24 @@ Make sure you have **Node.js** and **npm** installed on your machine.
    ```bash
    cd InkEdit
 
-3. Install dependencies:
+2. Update environment credentials:
+    - Create a `.env` file in the root of your project.
+    ```bash
+    InkEdit/
+        ├── src/
+        ├── .env
+        ├── package.json
+        └── ...
+   
+3. *Add your environment variables in the `.env` file:
+
+    ```plaintext
+    VITE_CKEDITOR_LICENSE_KEY='<YOUR_LICENSE_KEY>'
+    VITE_CKBOX_TOKEN_URL='<YOUR_CKBOX_TOKEN_URL>'
+
+
+
+5. Install dependencies:
    ```bash
    npm install
 

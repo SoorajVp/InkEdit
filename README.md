@@ -26,7 +26,8 @@ Make sure you have **Node.js** and **npm** installed on your machine.
 
 2. Update environment credentials:
     - Create a `.env` file in the root of your project.
-    ```bash
+
+    ```plaintext
     InkEdit/
         ├── src/
         ├── .env
@@ -36,10 +37,8 @@ Make sure you have **Node.js** and **npm** installed on your machine.
 3. *Add your environment variables in the `.env` file:
 
     ```plaintext
-    VITE_CKEDITOR_LICENSE_KEY='<YOUR_LICENSE_KEY>'
-    VITE_CKBOX_TOKEN_URL='<YOUR_CKBOX_TOKEN_URL>'
-
-
+    VITE_CKEDITOR_LICENSE_KEY = 'YOUR_LICENSE_KEY'
+    VITE_CKBOX_TOKEN_URL = 'YOUR_CKBOX_TOKEN_URL'
 
 5. Install dependencies:
    ```bash
@@ -58,3 +57,9 @@ Make sure you have **Node.js** and **npm** installed on your machine.
 
     ```bash
     npm run build
+
+
+## Key Resources
+
+- [CKEditor Documentation](https://ckeditor.com/docs/ckeditor5/latest/index.html) - Official documentation for CKEditor.
+- [Vite Documentation](https://vitejs.dev/guide/) - Official guide for Vite.

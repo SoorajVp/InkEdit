@@ -1,4 +1,4 @@
-# Document Editor Project
+# Document Editor - INKEDIT
 
 This template provides a minimal setup for a Document Editor built with **React** and **Vite**. It integrates **CKEditor** to deliver a user-friendly layout and rich text editing capabilities.
 
@@ -19,3 +19,27 @@ Make sure you have **Node.js** and **npm** installed on your machine.
 1. Clone the repository:
    ```bash
    git clone https://github.com/SoorajVp/InkEdit.git
+
+2. Navigate to the project folder:
+   ```bash
+   cd InkEdit
+
+3. Install dependencies:
+   ```bash
+   npm install
+
+
+## Running the Project
+
+- To start the development server with Vite's fast refresh, run:
+
+    ```bash
+    npm run dev
+
+
+## Running the Project
+
+- To create an optimized production build, run:
+
+    ```bash
+    npm run build

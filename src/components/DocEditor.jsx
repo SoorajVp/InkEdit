@@ -73,8 +73,8 @@ import 'ckeditor5/ckeditor5.css';
 import 'ckeditor5-premium-features/ckeditor5-premium-features.css';
 
 
-const LICENSE_KEY = 'YmthR1J0RzErQzk3WGFidFhjOVRhUW5FY3RKczd0ZnM3WXByT0FpWGNtL05vbzUrd09ndzVEa0IvVjNONFE9PS1NakF5TkRFeU1EVT0=';
-const CKBOX_TOKEN_URL = 'https://122293.cke-cs.com/token/dev/rAS7vXiEzfJBpTeqdCK0cA1Q1wRiOmq5aDlS?limit=10';
+const LICENSE_KEY = '<YOUR_LICENSE_KEY>';
+const CKBOX_TOKEN_URL = '<YOUR_CKBOX_TOKEN_URL>';
 
 export default function DocEditor() {
     const editorContainerRef = useRef(null);
@@ -409,9 +409,9 @@ function configUpdateAlert(config) {
         valuesToUpdate.push('LICENSE_KEY');
     }
 
-    // if (!isModifiedByUser(config.ckbox?.tokenUrl, '<YOUR_CKBOX_TOKEN_URL>')) {
-    //     valuesToUpdate.push('CKBOX_TOKEN_URL');
-    // }
+    if (!isModifiedByUser(config.ckbox?.tokenUrl, '<YOUR_CKBOX_TOKEN_URL>')) {
+        valuesToUpdate.push('CKBOX_TOKEN_URL');
+    }
 
     if (valuesToUpdate.length) {
         window.alert(

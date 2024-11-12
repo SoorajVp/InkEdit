@@ -1,25 +1,17 @@
-import DocEditor from "./components/CKEditor";
+import { BrowserRouter , Routes, Route } from "react-router-dom";
+import NotFound from "./components/error/Error";
+import Home from "./components/home/Home";
+import Editor from "./components/editor/Editor";
 
 function App() {
   return (
-    <>
-      {/* <div class="container">
-        <h2>Enter a Document URL</h2>
-        <form>
-          <label for="website-url">( PDF || DOCX || PPT )</label>
-          <br />
-          <input
-            type="url"
-            id="website-url"
-            name="website-url"
-            placeholder="https://example.com"
-          />
-          <button type="submit">Submit</button>
-        </form>
-      </div> */}
-
-      <DocEditor /> 
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/edit" element={<Editor />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

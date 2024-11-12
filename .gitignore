@@ -12,6 +12,8 @@ dist
 dist-ssr
 *.local
 
+server/node_modules
+
 # Ignore environment variables
 .env
 .env.local

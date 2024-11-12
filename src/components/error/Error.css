@@ -1,0 +1,18 @@
+
+.title {
+    font-size: 72px;
+    margin: 0;
+    color: #333;
+}
+
+.message {
+    font-size: 18px;
+    margin: 16px 0;
+    color: #666;
+}
+
+.link {
+    font-size: 16px;
+    color: #007bff;
+    text-decoration: none;
+}

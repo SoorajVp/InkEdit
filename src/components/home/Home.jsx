@@ -15,10 +15,10 @@ const Home = () => {
           name="website-url"
           value={url}
           onChange={(e) => setUrl(e.target.value)}
-          placeholder="https://example.com"
+          placeholder="https://example...."
         />
         <Link to={`/edit?url=${url}`}>
-          <button>Submit</button>
+          <button disabled={!url}>Submit</button>
         </Link>
       </div>
     </div>

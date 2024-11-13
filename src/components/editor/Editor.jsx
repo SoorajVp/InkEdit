@@ -19,7 +19,7 @@ const Editor = () => {
 
   const location = useLocation();
   const queryParams = new URLSearchParams(location.search);
-
+  const [error, setError] = useState(null)
   // Get specific query parameter
   const fileUrl = queryParams.get("url");
 
@@ -37,12 +37,14 @@ const Editor = () => {
          setEditorContent(response.data); // Set the HTML data in the state
        } catch (error) {
          console.error("Error fetching docx HTML:", error);
-         setEditorContent(`<p>Error while diplaying document</p>`)
+         setError(`Error while diplaying document`)
        }
     };
     ConvertDocToHtml();
   }, [fileUrl]);
 
+  if(error) return <h2>{error}</h2>;
+  
   return (
     <div>
       <DocEditor content={editorContent} />

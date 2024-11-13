@@ -1,5 +1,5 @@
 import { BrowserRouter , Routes, Route } from "react-router-dom";
-import NotFound from "./components/error/Error";
+import NotFound from "./components/error/PageError";
 import Home from "./components/home/Home";
 import Editor from "./components/editor/Editor";
 

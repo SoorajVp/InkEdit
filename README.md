@@ -16,31 +16,29 @@ Make sure you have **Node.js** and **npm** installed on your machine.
 
 ### Installation
 
-1. Clone the repository:
+- Clone the repository:
 
    ```bash
    git clone https://github.com/SoorajVp/InkEdit.git
-
    ```
 
-2. Navigate to the project folder:
+- Navigate to the project folder:
 
    ```bash
    cd InkEdit
-
    ```
 
-3. Update environment credentials:
+- Update environment credentials:
 
    - Create a `.env` file in the root of your project.
 
    ```plaintext
    InkEdit/
+       ├── server/
        ├── src/
        ├── .env
        ├── package.json
        └── ...
-
    ```
 
    - Add your environment variables in the `.env` file:
@@ -50,26 +48,32 @@ Make sure you have **Node.js** and **npm** installed on your machine.
    VITE_CKBOX_TOKEN_URL = 'YOUR_CKBOX_TOKEN_URL'
    ```
 
-4. Install dependencies:
+- Install dependencies:
    ```bash
    npm install
    ```
+- To start the development server:
+   ```bash
+   npm run dev
+   ```
 
-## Running the Project
+## Setup Server Side
 
-- To start the development server with Vite's fast refresh, run:
+- Navigate to the server folder:
+
+   ```bash
+   cd server
+   ```
+
+- Install server dependencies:
 
   ```bash
-  npm run dev
+  npm install
   ```
-
-## Running the Project
-
-- To create an optimized production build, run:
-
-  ```bash
-  npm run build
-  ```
+- Start the backend server:
+   ```bash
+   npm run dev
+   ```
 
 ## Key Resources
 
